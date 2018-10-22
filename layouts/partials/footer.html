@@ -1,0 +1,18 @@
+<footer>
+	{{ with .Site.Params.copyright }}
+		<a id="Code4PDXLink" href="https://codeforpdx.org" role="link" aria-label="Link for Code for PDX">
+			<small>{{ . | markdownify }}</small>
+		</a>
+	{{ end }}
+</footer>
+<style>
+	a#Code4PDXLink {
+		text-decoration: none;
+		color: white;
+		font-size: 2em;
+		transition: all 1s linear;
+	}
+	a#Code4PDXLink:hover {
+		color: fuchsia;
+	}
+</style>
