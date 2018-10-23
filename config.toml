@@ -6,6 +6,9 @@ paginate = 50
 theme = "sublime"
 title = "Civic Tech Lab"
 
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
 [permalinks]
 	post = "/:year/:month/:day/:slug"
 
