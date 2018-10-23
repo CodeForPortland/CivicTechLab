@@ -18,29 +18,28 @@ Basically it's a design pattern used primarily in large scale application delive
 The idea behind it is to decouple the components and modules to provide an orthogonal development environment so that those working on back and front end 
 do not have to worry about how the other developers create the solutions they are working on, they only need to understand how to send and receive data from them. 
 
-It is our intent to generalize, document and teach this process to allow it to be used as for any project that finds it's facilitation useful to promote
-a better developing experience and provide a better quality of deployment for a product and bring the power of enterprise to civic technology.
+It is our intent to generalize, document and teach this process to allow it to be used as is, for any project that finds it's facilitation useful to promote
+a better developing experience and to provide a better quality of deployment for a product. We have a prometheus mind set a want to bring the fire of enterprise to civic infrastructure.
 
 In short, the goal is to reduce the size and complexity for developers on the application layer and the need to learn new code stacks to work cohesively. 
 
-
 # An Overview
 
-AURA has *two main features* and *two constraints*. 
+AURA has two main *features* and two *constraints*. 
 
 ## Features
 
-These features are the main development focus for the **Civic Tech Lab** team and to provide a secure and user friendly API for other developers.
+The two main developments are the focus for the **Civic Tech Lab** team. They will provide a secure framework and user friendly API for other developers to achieve their goals.
 
 - **The Router** - We are building in [Go](https://golang.io) with [Nexus](https://github.com/gammazero/nexus). 
     This router is the main manager of communication for the services of various components that comprise the corpus a project. 
     The router provides [WAMP v2](https://wamp-proto.org) protocol endpoints that provide the connecting applications within **realms**. 
-    Each *realm* is comprised of **topics** that can be **subscribed** and **published** to using the **PubSub** pattern. 
+    Each *realm* is comprised of **topics** that can be **subscribed** and **published** too, using a **PubSub** pattern. 
     This decouples the components from each other and unifies the API into a **one-to-many** pattern.
 
-- **Kubernetes and Helm** - Using [Kubernetes (K8S)](https://kubernetes.io) can connect each component in a scalable and resilient SWARM pattern using kubernetes, which is also in *Go*. 
-This allows us to keep instances of contributions in a controlled state of communication with each other and further decouples each component, even from it's self. 
-[Helm](https://helm.sh) is *K8s*'s dependency manager and it's configuration files would be how a team would adapt this project to fit with their own.  
+- **Kubernetes and Helm** - Using [Kubernetes (K8S)](https://kubernetes.io) can connect each component in a scalable and resilient SWARM pattern. *K8S* which is also in *Go*, 
+    gives us the ability to keep instances of *contributions* in a controlled state of communication with other *services* and *components* and further decouples each of which in **pods** that can be replicated. 
+    [Helm](https://helm.sh) is *K8s*'s dependency manager and it's configuration files would be how a team would adapt this project to fit with their own.  
 
 
 ## Constraints
@@ -53,13 +52,13 @@ Ideally the **Civic Tech Lab** team would also provide working examples that a d
    To achieve this we are using [Dockerfiles](https://www.docker.com/get-started) and these would need to be placed inside each components root directory.
    
 - **WAMP v2** - `WAMP != WAMP` [WAMP](https://wamp-proto.org) stands for Web Application Message Protocol, and it is a standard for communication over **websockets**.
-    Think of WAMP as HTTP for a websocket. HTTP comes with predefined features like *message codes* eg `404` or *methods*, eg `GET`, `POST`. 
+    Think of WAMP as HTTP for a websocket. HTTP is a standard, it comes with predefined features like **message codes** eg `404` and `200` or **methods**, eg `GET`, `POST`. 
     WAMP contains it's own *message codes* eg `8` (**ERROR**) and methods eg, `SUBSCRIBE` and `PUBLISH`. 
 
   
 # We Are Currently Working To An Alpha Build
 
-Check it out @ [Github](https://github.com/CodeForPortland/Civic-Tech-Lab-AURA) or if you like to contribute send a message to [Rex](rex@codeforpdx.org) or just 
+Check it out @ [Github](https://github.com/CodeForPortland/CivicTechLab-AURA) or if you like to contribute send a message to [Rex](rex@codeforpdx.org) or just 
 <a class="github-button" href="https://github.com/CodeForPortland/Civic-Tech-Lab-AURA/fork" data-icon="octicon-repo-forked" aria-label="Fork CodeForPortland/Civic-Tech-Lab-AURA on GitHub">Fork</a> us! :)
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>

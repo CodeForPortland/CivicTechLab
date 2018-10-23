@@ -14,7 +14,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
 	name = "Code4PDX Infrastructure Engineering"
-	description = "Ficilitating the ability to code and contribute."
+	description = "Facilitating the ability to code and contribute."
 	copyright = "Code4PDX"
 
 	# Custom assets can be linked with their paths relative to static/
