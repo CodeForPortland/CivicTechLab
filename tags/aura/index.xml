@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aura on Civic Tech Lab</title>
+    <link>/CivicTechLab/tags/aura/</link>
+    <description>Recent content in Aura on Civic Tech Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 21 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/CivicTechLab/tags/aura/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AURA: An Agnostic Query</title>
+      <link>/CivicTechLab/posts/agnosticqueries/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/posts/agnosticqueries/</guid>
+      <description>AURA.* Working with a variety of developers we think that we should be agnostic to the languages that the contributors and projects use.
+AURA is that solution, it stands for an Agnostic Utility for Remote Applications. It&amp;rsquo;s purpose is to provide polygoltism to the contribution tech stack. Basically it&amp;rsquo;s a design pattern used primarily in large scale application delivery systems known as a microservice architecture. The idea behind it is to decouple the components and modules to provide an orthogonal development environment so that those working on back and front end do not have to worry about how the other developers create the solutions they are working on, they only need to understand how to send and receive data from them.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Civic Tech Lab</title>
+    <link>/CivicTechLab/</link>
+    <description>Recent content on Civic Tech Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 21 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/CivicTechLab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AURA: An Agnostic Query</title>
+      <link>/CivicTechLab/posts/agnosticqueries/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/posts/agnosticqueries/</guid>
+      <description>AURA.* Working with a variety of developers we think that we should be agnostic to the languages that the contributors and projects use.
+AURA is that solution, it stands for an Agnostic Utility for Remote Applications. It&amp;rsquo;s purpose is to provide polygoltism to the contribution tech stack. Basically it&amp;rsquo;s a design pattern used primarily in large scale application delivery systems known as a microservice architecture. The idea behind it is to decouple the components and modules to provide an orthogonal development environment so that those working on back and front end do not have to worry about how the other developers create the solutions they are working on, they only need to understand how to send and receive data from them.</description>
+    </item>
+    
+    <item>
+      <title>Go is for Lovers</title>
+      <link>/CivicTechLab/posts/dfljasldjflmmmm/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/posts/dfljasldjflmmmm/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</description>
+    </item>
+    
+    <item>
+      <title>Hugo is for Lovers</title>
+      <link>/CivicTechLab/posts/brothers-karamazovdfasdf/</link>
+      <pubDate>Sun, 21 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/posts/brothers-karamazovdfasdf/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+  </channel>
+</rss>

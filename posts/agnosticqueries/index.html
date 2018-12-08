@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>AURA: An Agnostic Query  &middot; Civic Tech Lab </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-US" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Code4PDX Infrastructure Engineering">
+    <meta name="description" content="Facilitating the ability to code and contribute.">
+    <meta name="generator" content="Hugo 0.52" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/CivicTechLab/css/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="/CivicTechLab/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="/CivicTechLab/">Civic Tech Lab</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    21 October 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">AURA: An Agnostic Query</h1>
+                <div itemprop="articleBody">
+                    
+
+<h1 id="aura">AURA.*</h1>
+
+<p>Working with a variety of developers we think that we should be agnostic to the languages that the contributors and projects use.</p>
+
+<p><strong>AURA</strong> is that solution, it stands for an <strong>A</strong>gnostic <strong>U</strong>tility for <strong>R</strong>emote <strong>A</strong>pplications. It&rsquo;s purpose is to provide polygoltism to the contribution tech stack.
+Basically it&rsquo;s a design pattern used primarily in large scale application delivery systems known as a microservice architecture.
+The idea behind it is to decouple the components and modules to provide an orthogonal development environment so that those working on back and front end
+do not have to worry about how the other developers create the solutions they are working on, they only need to understand how to send and receive data from them.</p>
+
+<p>It is our intent to generalize, document and teach this process to allow it to be used as is, for any project that finds it&rsquo;s facilitation useful to promote
+a better developing experience and to provide a better quality of deployment for a product. We have a prometheus mind set a want to bring the fire of enterprise to civic infrastructure.</p>
+
+<p>In short, the goal is to reduce the size and complexity for developers on the application layer and the need to learn new code stacks to work cohesively.</p>
+
+<h1 id="an-overview">An Overview</h1>
+
+<p>AURA has two main <em>features</em> and two <em>constraints</em>.</p>
+
+<h2 id="features">Features</h2>
+
+<p>The two main developments are the focus for the <strong>Civic Tech Lab</strong> team. They will provide a secure framework and user friendly API for other developers to achieve their goals.</p>
+
+<ul>
+<li><p><strong>The Router</strong> - We are building in <a href="https://golang.io">Go</a> with <a href="https://github.com/gammazero/nexus">Nexus</a>.
+This router is the main manager of communication for the services of various components that comprise the corpus a project.
+The router provides <a href="https://wamp-proto.org">WAMP v2</a> protocol endpoints that provide the connecting applications within <strong>realms</strong>.
+Each <em>realm</em> is comprised of <strong>topics</strong> that can be <strong>subscribed</strong> and <strong>published</strong> too, using a <strong>PubSub</strong> pattern.
+This decouples the components from each other and unifies the API into a <strong>one-to-many</strong> pattern.</p></li>
+
+<li><p><strong>Kubernetes and Helm</strong> - Using <a href="https://kubernetes.io">Kubernetes (K8S)</a> can connect each component in a scalable and resilient SWARM pattern. <em>K8S</em> which is also in <em>Go</em>,
+gives us the ability to keep instances of <em>contributions</em> in a controlled state of communication with other <em>services</em> and <em>components</em> and further decouples each of which in <strong>pods</strong> that can be replicated.
+<a href="https://helm.sh">Helm</a> is <em>K8s</em>&rsquo;s dependency manager and it&rsquo;s configuration files would be how a team would adapt this project to fit with their own.</p></li>
+</ul>
+
+<h2 id="constraints">Constraints</h2>
+
+<p>The are two required components for facilitating a service or front-end module to be able to be used by this framework.
+Ideally the <strong>Civic Tech Lab</strong> team would also provide working examples that a developer could just cut and paste straight into their code.</p>
+
+<ul>
+<li><p><strong>Dockerfiles</strong> - <em>Containerization</em> is the process of creating an environment for your application, an analogy for a container
+is a baby computer inside of another computer. This is a core piece to decoupling tech stacks and ensuring that a program can run on any system.
+To achieve this we are using <a href="https://www.docker.com/get-started">Dockerfiles</a> and these would need to be placed inside each components root directory.</p></li>
+
+<li><p><strong>WAMP v2</strong> - <code>WAMP != WAMP</code> <a href="https://wamp-proto.org">WAMP</a> stands for Web Application Message Protocol, and it is a standard for communication over <strong>websockets</strong>.
+Think of WAMP as HTTP for a websocket. HTTP is a standard, it comes with predefined features like <strong>message codes</strong> eg <code>404</code> and <code>200</code> or <strong>methods</strong>, eg <code>GET</code>, <code>POST</code>.
+WAMP contains it&rsquo;s own <em>message codes</em> eg <code>8</code> (<strong>ERROR</strong>) and methods eg, <code>SUBSCRIBE</code> and <code>PUBLISH</code>.</p></li>
+</ul>
+
+<h1 id="we-are-currently-working-to-an-alpha-build">We Are Currently Working To An Alpha Build</h1>
+
+<p>Check it out @ <a href="https://github.com/CodeForPortland/CivicTechLab-AURA">Github</a> or if you like to contribute send a message to <a href="rex@codeforpdx.org">Rex</a> or just
+<a class="github-button" href="https://github.com/CodeForPortland/Civic-Tech-Lab-AURA/fork" data-icon="octicon-repo-forked" aria-label="Fork CodeForPortland/Civic-Tech-Lab-AURA on GitHub">Fork</a> us! :)
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script></p>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+		<a id="Code4PDXLink" href="https://codeforpdx.org" role="link" aria-label="Link for Code for PDX">
+			<small>Code4PDX</small>
+		</a>
+	
+</footer>
+<style>
+	a#Code4PDXLink {
+		text-decoration: none;
+		color: white;
+		font-size: 2em;
+		transition: all 1s linear;
+	}
+	a#Code4PDXLink:hover {
+		color: fuchsia;
+	}
+</style>
+
+    </div>
+
+    <div class="next-prev-arrows">
+        
+        
+            <a rel="prev" href="/CivicTechLab/posts/dfljasldjflmmmm/" id="prev">
+                 <span class="nav-title nav-title-prev">Go is for Lovers</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/CivicTechLab/js/scrollreveal.min.js"></script>
+<script type='application/javascript' src='/CivicTechLab/js/smooth-scrollbar.js'></script>
+<script src="/CivicTechLab/js/baffle.min.js"></script>
+<script src="/CivicTechLab/js/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

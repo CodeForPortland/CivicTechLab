@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Civic Tech Lab</title>
+    <link>/CivicTechLab/tags/</link>
+    <description>Recent content in Tags on Civic Tech Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 21 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/CivicTechLab/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aura</title>
+      <link>/CivicTechLab/tags/aura/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/tags/aura/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>/CivicTechLab/tags/blog/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>/CivicTechLab/tags/development/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssss</title>
+      <link>/CivicTechLab/tags/ssss/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/tags/ssss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vvvvv</title>
+      <link>/CivicTechLab/tags/vvvvv/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/tags/vvvvv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xxx</title>
+      <link>/CivicTechLab/tags/xxx/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/tags/xxx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yyy</title>
+      <link>/CivicTechLab/tags/yyy/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/CivicTechLab/tags/yyy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
