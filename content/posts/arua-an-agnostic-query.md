@@ -58,7 +58,7 @@ Ideally the **Civic Tech Lab** team would also provide working examples that a d
   
 # We Are Currently Working To An Alpha Build
 
-Check it out @ [Github](https://github.com/CodeForPortland/CivicTechLab-AURA) or if you like to contribute send a message to [Rex](rex@codeforpdx.org) or just 
+Check it out @ [Github](https://github.com/CodeForPortland/CivicTechLab-AURA) or if you like to contribute send a message to [Rex](mailtoi:rex@codeforpdx.org) or just 
 <a class="github-button" href="https://github.com/CodeForPortland/Civic-Tech-Lab-AURA/fork" data-icon="octicon-repo-forked" aria-label="Fork CodeForPortland/Civic-Tech-Lab-AURA on GitHub">Fork</a> us! :)
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
